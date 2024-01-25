@@ -19,9 +19,7 @@ public class NoteappApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins
-						("https://note-app-iota-seven.vercel.app").
-						allowedMethods("*").allowedHeaders("*");
+				registry.addMapping("/greeting-javaconfig").allowedOrigins("https://note-app-iota-seven.vercel.app/");
 			}
 		};
 	}
