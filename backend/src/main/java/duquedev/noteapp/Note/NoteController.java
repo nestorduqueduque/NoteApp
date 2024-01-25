@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("notes")
-@CrossOrigin(origins = "https://note-app-iota-seven.vercel.app")
+@CrossOrigin(origins = "https://note-app-iota-seven.vercel.app/notes")
 public class NoteController {
 
     @Autowired
