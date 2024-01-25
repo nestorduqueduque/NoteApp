@@ -20,7 +20,7 @@ public class NoteappApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**").allowedOrigins
-						("https://note-app-iota-seven.vercel.app/").
+						("https://note-app-iota-seven.vercel.app").
 						allowedMethods("*").allowedHeaders("*");
 			}
 		};
