@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("notes")
-@CrossOrigin(value = "http://localhost:3000")
+@CrossOrigin(value = "https://note-app-iota-seven.vercel.app/")
 public class NoteController {
 
     @Autowired
