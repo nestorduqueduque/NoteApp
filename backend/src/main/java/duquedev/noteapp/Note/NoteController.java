@@ -12,7 +12,8 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("notes")
-@CrossOrigin(origins = "https://note-app-iota-seven.vercel.app")
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET,
+        RequestMethod.POST, RequestMethod.DELETE, RequestMethod.OPTIONS, RequestMethod.PATCH})
 public class NoteController {
 
     @Autowired
