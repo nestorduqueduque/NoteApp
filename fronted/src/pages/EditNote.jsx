@@ -8,7 +8,7 @@ import { IoMdArchive } from "react-icons/io";
 
 export default function EditNote() {
 
-    const urlBase = "http://localhost:8080/notes";
+    const urlBase = "https://noteapp-production-b75b.up.railway.app/notes";
    
     let navigation = useNavigate();
 

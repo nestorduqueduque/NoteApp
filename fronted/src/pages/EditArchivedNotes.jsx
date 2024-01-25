@@ -10,7 +10,7 @@ import { CgNotes } from "react-icons/cg";
 
 export default function EditArchivedNotes() {
 
-    const urlBase = "http://localhost:8080/notes";
+    const urlBase = "https://noteapp-production-b75b.up.railway.app/notes";
    
     let navigation = useNavigate();
 

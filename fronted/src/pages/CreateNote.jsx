@@ -21,7 +21,7 @@ export default function CreateNote() {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        const urlBase = "http://localhost:8080/notes/add";
+        const urlBase = "https://noteapp-production-b75b.up.railway.app/notes/add";
         await axios.post(urlBase, notes);
         navigation('/')
 

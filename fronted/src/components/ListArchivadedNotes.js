@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
 export default function ListArchivadedNotes() {
-    const urlBase = "http://localhost:8080/notes/list/archived";
+    const urlBase = "https://noteapp-production-b75b.up.railway.app/notes/list/archived";
     
     const[notes, setArchivedNotes] = useState([]);
 
