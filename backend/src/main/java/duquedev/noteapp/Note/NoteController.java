@@ -12,8 +12,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("notes")
-@CrossOrigin(origins = "*", methods = {RequestMethod.GET,
-        RequestMethod.POST, RequestMethod.DELETE, RequestMethod.OPTIONS, RequestMethod.PATCH})
 public class NoteController {
 
     @Autowired
