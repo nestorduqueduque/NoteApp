@@ -1,6 +1,15 @@
 spring:
-  datasource:
-    url: jdbc:tc:mysql:16-alpine:///spring-blog
-  sql:
-    init:
-      mode: always
+  profiles:
+    active: test
+
+server:
+  port: ${PORT:3000}
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    datasource:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:tc:mysql:16-alpine:///spring-blog
+    hibernate:
+      ddl-auto: update
